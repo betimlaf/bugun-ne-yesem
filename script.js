@@ -22,6 +22,7 @@ const onerBtn = document.getElementById("onerBtn");
 const sonucP = document.getElementById("sonuc");
 const favoriBtn = document.getElementById("favoriBtn");
 const favorilerUl = document.getElementById("favoriler");
+const tekrarBtn = document.getElementById("tekrarBtn");
 
 let secilenYemek = "";
 
@@ -99,7 +100,16 @@ onerBtn.addEventListener("click", () => {
   }
 
   secilenYemek = liste[Math.floor(Math.random() * liste.length)];
+  sonucP.classList.remove("show");
+
+setTimeout(() => {
   sonucP.textContent = "Bugün şunu yiyebilirsin: " + secilenYemek;
+  sonucP.classList.add("show");
+}, 50);
+
+favoriBtn.style.display = "inline-block";
+tekrarBtn.style.display = "inline-block";
+
   favoriBtn.style.display = "block";
 });
 
@@ -116,3 +126,6 @@ favoriBtn.addEventListener("click", () => {
 });
 
 favorileriGoster();
+tekrarBtn.addEventListener("click", () => {
+  onerBtn.click();
+});
