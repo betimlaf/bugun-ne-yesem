@@ -107,3 +107,71 @@ button:hover {
 #tekrarBtn:hover {
   background: #339af0;
 }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: white;
+  padding: 24px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+button {
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+#onerBtn {
+  background: #5f3dc4;
+  color: white;
+  width: 100%;
+}
+
+#favoriBtn {
+  background: #ffd43b;
+  margin-top: 10px;
+}
+
+#tekrarBtn {
+  background: #4dabf7;
+  margin-top: 8px;
+}
+
+#sonuc {
+  font-size: 18px;
+  margin-top: 16px;
+  font-weight: 600;
+}
+
+ul#favoriler {
+  margin-top: 16px;
+  padding: 0;
+}
+
+ul#favoriler li {
+  list-style: none;
+  background: #f1f3f5;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
