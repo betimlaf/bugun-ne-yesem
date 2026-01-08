@@ -79,3 +79,31 @@ button:hover {
 #favoriBtn:hover {
   background: #ffca3a;
 }
+/* Sonuç animasyonu */
+#sonuc {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+#sonuc.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Tekrar öner butonu */
+#tekrarBtn {
+  margin-top: 10px;
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 8px;
+  background: #4dabf7;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+#tekrarBtn:hover {
+  background: #339af0;
+}
