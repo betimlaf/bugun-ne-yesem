@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bugün Ne Yesem?</title>
+
+  <meta name="description" content="Bugün ne yiyeceğine karar veremiyor musun? Tek tıkla yemek önerisi al." />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <main class="container">
+    <h1>🍽️ Bugün Ne Yesem?</h1>
+
+    <select id="secim">
+      <option value="">Ne tür yemek istiyorsun?</option>
+      <option value="hizli">Hızlı Yemek</option>
+      <option value="saglikli">Sağlıklı</option>
+      <option value="ev">Ev Yemeği</option>
+      <option value="tatli">Tatlı</option>
+    </select>
+
+    <button id="onerBtn">Öner</button>
+
+    <p id="sonuc"></p>
+  </main>
+
+<button id="favoriBtn" style="display:none; margin-top:10px;">
+  ⭐ Favorilere Ekle
+</button>
+
+<ul id="favoriler" style="margin-top:20px; text-align:left;"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+</body>
+</html>
